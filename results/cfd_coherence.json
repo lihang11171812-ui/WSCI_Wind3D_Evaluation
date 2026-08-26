@@ -1,0 +1,75 @@
+{
+  "metric": "spatiotemporal-terrain coherence",
+  "standard_status": "project-defined diagnostic; not an industry standard",
+  "source": "/Users/lihang/Desktop/wind_3d_uvwz.npz",
+  "shape_tzyx": [
+    1,
+    21,
+    68,
+    68
+  ],
+  "nominal_weights": {
+    "space": 0.45,
+    "time": 0.35,
+    "terrain": 0.2
+  },
+  "effective_weights": {
+    "space": 0.6923076923076923,
+    "terrain": 0.3076923076923077
+  },
+  "components": {
+    "space": {
+      "score": 0.9570857961264463,
+      "effective_weights": {
+        "P_mono": 0.6,
+        "P_small": 0.4
+      },
+      "corr_lag_gamma": 0.9982164038889336,
+      "P_mono": 0.9991082019444668,
+      "P_small": 0.8940521873994155,
+      "lag_m": [
+        30.0,
+        60.0,
+        90.0,
+        120.0,
+        150.0,
+        180.0,
+        210.0,
+        240.0
+      ],
+      "gamma_m2_s2": [
+        0.004076791047216631,
+        0.00887874637717895,
+        0.014417430607502463,
+        0.02015218524299421,
+        0.02553287519146837,
+        0.030377708760541015,
+        0.034801107903106254,
+        0.03847923753253771
+      ],
+      "pair_count": [
+        176278,
+        172507,
+        168968,
+        165615,
+        162401,
+        159284,
+        156196,
+        153138
+      ]
+    },
+    "time": {
+      "score": null,
+      "reason": "fewer than 3 time frames"
+    },
+    "terrain": {
+      "score": 0.9205449447091086,
+      "definition": "exp[-RMSE(w-u*dH/dx-v*dH/dy)/RMS(|V|)]",
+      "normal_velocity_rmse_m_s": 0.18345920879149466,
+      "near_surface_rms_speed_m_s": 2.2159731939126743,
+      "sample_count": 4624
+    }
+  },
+  "coherence_0_1": 0.9458424572288039,
+  "coherence_0_100": 94.58424572288038
+}

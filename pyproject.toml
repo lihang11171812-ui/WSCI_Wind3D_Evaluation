@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wsci-wind-evaluation"
+version = "0.1.0"
+description = "Project-defined WSCI and spatiotemporal-terrain coherence diagnostics for gridded wind fields"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "WSCI project contributors"}]
+dependencies = ["numpy>=1.24,<3"]
+
+[project.scripts]
+wind-eval = "wind_eval.cli:main"
+wsci-eval = "wind_eval.cli:wsci_main"
+coherence-eval = "wind_eval.cli:coherence_main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
