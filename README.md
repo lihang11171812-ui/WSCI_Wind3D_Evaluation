@@ -276,16 +276,3 @@ C_g=\exp\left[-\frac{\operatorname{RMSE}
 4. Raissi, M., Perdikaris, P., & Karniadakis, G. E. (2019). *Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations*. Journal of Computational Physics, 378, 686–707. https://doi.org/10.1016/j.jcp.2018.10.045
 
 引用1–3支持使用结构函数、空间统计和速度方差诊断风场；引用4支持将物理约束用于数据驱动场重建。它们不规定本项目的WSCI公式或权重。
-
-## 10. 上传 GitHub
-
-```bash
-git init
-git add .
-git commit -m "Initial release of WSCI wind evaluation"
-git branch -M main
-git remote add origin https://github.com/<YOUR_ACCOUNT>/wsci-wind-evaluation.git
-git push -u origin main
-```
-
-发布前请在 `LICENSE`、`CITATION.cff` 和 `pyproject.toml` 中补充真实作者、单位和仓库地址。
